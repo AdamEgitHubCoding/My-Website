@@ -151,6 +151,7 @@
     <div class="links">
       <a href="#about">About</a>
       <a href="#education">Education</a>
+      <a href="#enrichment">Coursework</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </div>
@@ -202,6 +203,42 @@
       <ul>
         <li>Gold Honor Roll — earned twice for 4.0 GPA terms.</li>
         <li>Silver Honor Roll — earned for a 3.67 GPA term.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="enrichment">
+  <div class="container reveal">
+    <p class="section-label">Enrichment & Coursework</p>
+    <h2>Beyond the classroom</h2>
+    <p style="color:var(--gray); font-size:1.02rem; max-width:640px; margin-bottom:24px;">
+      I've taken advanced courses outside of school since 5th grade — pushing further in math, writing, and coding.
+    </p>
+
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">Art of Problem Solving (AoPS) — Online Academy</span>
+        <span class="item-meta">2022 – 2026</span>
+      </div>
+      <div class="item-role">Advanced math & language arts coursework</div>
+      <ul>
+        <li><strong>Honors LA 8:</strong> Journalism, Science Writing & the Art of Nonfiction (2025–2026).</li>
+        <li><strong>Honors Math 7:</strong> Introduction to Algebra A (completed Feb. 2025).</li>
+        <li><strong>Honors LA 6:</strong> Foundations in Middle School Language Arts A & B (completed May 2024).</li>
+        <li><strong>Pre-Algebra</strong> (completed May 2024).</li>
+        <li><strong>Honors Math 5</strong> A/B/C/D (completed May 2023).</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">Coding Classes</span>
+        <span class="item-meta">2022 – 2025</span>
+      </div>
+      <ul>
+        <li><strong>Moonpreneur</strong> (Grade 7, 2024–2025): C++ programming with hands-on hardware projects — built and programmed physical devices.</li>
+        <li><strong>BYJU'S</strong> (Grades 5–6, 2022–2024): Web and game development using HTML, JavaScript, and C++ in VS Code.</li>
       </ul>
     </div>
   </div>
@@ -310,10 +347,13 @@
     <div class="skills-row">
       <div class="label">Technical</div>
       <div class="tags">
+        <span class="tag">C</span>
+        <span class="tag">C++</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">HTML</span>
         <span class="tag">Robotics (VEX, FTC)</span>
-        <span class="tag">C programming</span>
         <span class="tag">Autonomous systems</span>
-        <span class="tag">Presentation & editing</span>
+        <span class="tag">Hardware programming</span>
       </div>
     </div>
     <div class="skills-row">
