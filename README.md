@@ -22,12 +22,16 @@
   body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--dark); line-height: 1.6; -webkit-font-smoothing: antialiased; }
   h1, h2, h3 { font-family: 'Fraunces', serif; font-weight: 600; }
   .container { max-width: 860px; margin: 0 auto; padding: 0 28px; }
+  
+  /* Navigation */
   nav { position: sticky; top: 0; z-index: 100; background: rgba(250,250,250,0.85); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
   nav .container { display: flex; justify-content: space-between; align-items: center; height: 60px; }
   nav .logo { font-family: 'Fraunces', serif; font-weight: 700; font-size: 1.15rem; color: var(--accent); }
   nav .links a { color: var(--gray); text-decoration: none; margin-left: 24px; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
   nav .links a:hover { color: var(--accent); }
   @media (max-width: 600px) { nav .links a { margin-left: 14px; font-size: 0.8rem; } }
+  
+  /* Header */
   header { padding: 90px 0 70px; border-bottom: 1px solid var(--border); background: radial-gradient(circle at 80% 20%, rgba(46,108,168,0.06), transparent 45%), radial-gradient(circle at 10% 80%, rgba(31,78,121,0.05), transparent 40%); }
   header .eyebrow { color: var(--accent); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 14px; }
   header h1 { font-size: 3.4rem; line-height: 1.05; color: var(--dark); font-weight: 700; }
@@ -37,9 +41,13 @@
   header .meta a { color: var(--accent); text-decoration: none; }
   header .meta a:hover { text-decoration: underline; }
   @media (max-width: 600px) { header h1 { font-size: 2.3rem; } header { padding: 56px 0 44px; } }
+  
+  /* Sections */
   section { padding: 56px 0; border-bottom: 1px solid var(--border); }
   .section-label { color: var(--accent); font-weight: 600; font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 8px; }
   section h2 { font-size: 1.9rem; margin-bottom: 28px; color: var(--dark); }
+  
+  /* Items */
   .item { margin-bottom: 26px; }
   .item:last-child { margin-bottom: 0; }
   .item-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px; }
@@ -56,6 +64,7 @@
     .card.featured { grid-column: span 2; }
   }
   
+  /* Cards */
   .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 24px 26px; transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; display: flex; flex-direction: column; justify-content: flex-start; }
   .card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(31,78,121,0.10); border-color: var(--accent-light); }
   .card .badge { align-self: flex-start; display: inline-block; background: rgba(31,78,121,0.08); color: var(--accent); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.05em; padding: 4px 10px; border-radius: 20px; margin-bottom: 12px; text-transform: uppercase; }
@@ -65,20 +74,13 @@
   .card.featured { border: 2px solid var(--accent); background: linear-gradient(135deg, rgba(31,78,121,0.04), rgba(46,108,168,0.02)); }
   .card.featured .badge { background: var(--accent); color: #fff; }
   .card-img { width: 100%; max-height: 500px; object-fit: cover; border-radius: 8px; margin-top: 16px; }
-  .skills-row { margin-bottom: 16px; }
-  .skills-row .label { font-weight: 600; color: var(--dark); margin-bottom: 8px; }
-  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
-  .tag { background: var(--card); border: 1px solid var(--border); color: var(--gray); padding: 6px 14px; border-radius: 20px; font-size: 0.88rem; font-weight: 500; }
+  
+  /* Contact Box */
   .contact-box { text-align: center; padding: 20px 0 0; }
   .contact-box p { color: var(--gray); margin-bottom: 22px; font-size: 1.05rem; }
   .btn { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; padding: 13px 30px; border-radius: 30px; font-weight: 600; font-size: 0.98rem; transition: background 0.2s, transform 0.2s; }
   .btn:hover { background: var(--accent-light); transform: translateY(-2px); }
   footer { text-align: center; padding: 34px 0; color: var(--light-gray); font-size: 0.85rem; }
-  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
-  .reveal.visible { opacity: 1; transform: translateY(0); }
-  .soccer-photo { margin-top: 18px; border-radius: 12px; overflow: hidden; max-width: 340px; }
-  .soccer-photo img { width: 100%; display: block; border-radius: 12px; }
-  .soccer-photo-caption { font-size: 0.82rem; color: var(--light-gray); margin-top: 7px; }
 </style>
 </head>
 <body>
@@ -109,7 +111,7 @@
 </header>
 
 <section id="about">
-  <div class="container reveal">
+  <div class="container">
     <p class="section-label">About</p>
     <h2>A bit about me</h2>
     <p style="color:var(--gray); font-size:1.05rem; max-width:640px;">
@@ -122,7 +124,7 @@
 </section>
 
 <section id="education">
-  <div class="container reveal">
+  <div class="container">
     <p class="section-label">Education</p>
     <h2>Education</h2>
     <div class="item">
@@ -147,7 +149,7 @@
 </section>
 
 <section id="enrichment">
-  <div class="container reveal">
+  <div class="container">
     <p class="section-label">Enrichment & Coursework</p>
     <h2>Beyond the classroom</h2>
     <p style="color:var(--gray); font-size:1.02rem; max-width:640px; margin-bottom:24px;">
@@ -181,7 +183,7 @@
 </section>
 
 <section id="projects">
-  <div class="container reveal">
+  <div class="container">
     <p class="section-label">Projects</p>
     <h2>Things I've built</h2>
     <div class="projects-grid">
@@ -212,7 +214,7 @@
 </section>
 
 <section id="contact">
-  <div class="container reveal">
+  <div class="container">
     <p class="section-label">Contact</p>
     <h2>Get in touch</h2>
     <div class="contact-box">
